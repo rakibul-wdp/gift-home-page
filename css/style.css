@@ -21,10 +21,16 @@
 .first-big-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2rem 18rem 2rem 18rem;
+}
+.first-big-header-img-nav-container {
+  display: flex;
+  align-items: center;
 }
 .first-big-header img {
   width: 4rem;
+  margin-right: 2.5rem;
 }
 .first-big-header-nav > ul {
   display: flex;
@@ -56,4 +62,53 @@
 }
 .first-big-header-nav > ul > li:hover > ul > a {
   display: none;
+}
+.first-big-header-search-cart button {
+  border: none;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+.first-big-header-search-cart button i {
+  font-size: 25px;
+}
+.checkbtn {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media  (min-width: 600px) and (max-width: 767px) {
+  .first-big-header {
+    padding: 2rem 5rem 2rem 5rem;
+  }
+  .first-big-header-nav {
+    display: none;
+  }
+  .checkbtn {
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  (min-width: 768px) and (max-width: 991px) {
+  .first-big-header {
+    padding: 2rem 5rem 2rem 5rem;
+  }
+  .first-big-header-nav {
+    display: none;
+  }
+  .checkbtn {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  (min-width: 992px) and (max-width: 1400px) {
+  .first-big-header {
+    padding: 2rem 8rem 2rem 8rem;
+  }
 }
