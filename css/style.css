@@ -595,3 +595,10 @@
   }
 }
 /* footer section style end here */
+
+.whatsapp-message {
+  width: 5rem;
+  position: fixed;
+  bottom: 25px;
+  left: 94%;
+}
