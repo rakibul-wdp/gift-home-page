@@ -280,37 +280,37 @@
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 599px) {
   .card-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-}
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, between 600px and 767px) */
 @media (min-width: 600px) and (max-width: 767px) {
   .card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
 
 /* Medium devices (landscape tablets, between 768px and 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
 
 /* Large devices (laptops/desktops, between 992px and 1400px) */
 @media (min-width: 992px) and (max-width: 1400px) {
   .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
 }
 /* card style end here */
 
@@ -327,3 +327,74 @@
   height: 100%;
 }
 /* eco ganesh style end here */
+
+/* follow instagram style start here */
+.follow-instagram-container .card-container-follow-ins {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.follow-ins-card .hoverImg {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.follow-instagram-container h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.follow-ins-card {
+  width: 14rem;
+  position: relative;
+}
+.follow-ins-card:hover .follow-ins-card img {
+  opacity: 0.3;
+}
+.follow-ins-card:hover .hoverImg {
+  opacity: 1;
+  cursor: pointer;
+}
+.follow-ins-card img {
+  width: 14rem;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 599px) {
+  .follow-instagram-container .card-container-follow-ins {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, between 600px and 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .follow-instagram-container .card-container-follow-ins {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (landscape tablets, between 768px and 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .follow-instagram-container .card-container-follow-ins {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, between 992px and 1400px) */
+@media (min-width: 992px) and (max-width: 1400px) {
+  .follow-instagram-container .card-container-follow-ins {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* follow instagram style end here */
