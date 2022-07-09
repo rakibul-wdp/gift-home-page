@@ -262,6 +262,9 @@
   left: 38%;
   color: #fff;
 }
+.price-discount {
+  left: 29%;
+}
 .name {
   font-size: 15px;
 }
