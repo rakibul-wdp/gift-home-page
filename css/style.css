@@ -313,3 +313,10 @@
 }
 }
 /* card style end here */
+
+/* eco friendly style start here */
+.eco-friendly-container img {
+  width: 100%;
+  height: 100%;
+}
+/* eco friendly style end here */
